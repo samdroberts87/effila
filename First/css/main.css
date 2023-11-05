@@ -1,0 +1,174 @@
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  .offcanvas-menu {
+    background-color: #333; 
+    opacity: 0.9;
+  }
+  .raleway {
+    font-family: 'Raleway', sans-serif; 
+  }
+.universal-border {
+    border: 1px solid rgb(149, 137, 106);
+  }
+  .hero-image-container {
+    position: relative;
+  }
+  .text {
+    color: white;
+    font-size: 16px;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .container-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 0px;
+  padding-bottom: 0px;
+  }
+   .container-wrapper-au {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 0px;
+  padding-bottom: 0px;
+  }
+  .container-half1, .container-half2 {
+    width: 50%;
+    display: flex;
+    /* additional styles for each container */
+  }
+  @media (orientation: portrait){
+    .container-half1 {
+      width: 100%
+    }
+    .container-half2 {
+      display: none;
+    }
+  } 
+  .about-us {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-wrapper-test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .container-q1, .container-q2, .container-q3, .container-q4 {
+    padding: 20px;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .italic{
+  font-style: italic;
+  }
+  @media (orientation: portrait) {
+    .container-wrapper-test {
+    flex-direction: column;  
+  }
+  .container-q1, .container-q2, .container-q3, .container-q4 {
+     border: 1px solid rgb(149, 137, 106);
+  }
+} 
+  .container123 {
+    justify-content: space around;
+    padding-top: 15px;
+    width: 33%;
+  }
+  .test-tile-title {
+    padding-right: 20px;
+    background-color: rgb(149, 137, 106)
+  }
+  .gold-text {
+    color: rgb(149, 137, 106);
+  }
+  .our-services-box {
+    background-image: url("images/power-tool.avif");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    @media (orientation: portrait) {
+    .contact-us-section {
+    flex-direction: column;
+  } 
+  }
+  a {
+    text-decoration: none; /* Removes underlines */
+    color: inherit; /* Inherits the text color from the parent */
+  }
+  @media screen and (orientation:portrait) {
+    html {
+        font-size: 150%; /* Adjust the percentage as needed */
+    }}
+    .fixed-container {
+      position: fixed;
+      top: 80px; /* Adjust the value to match the height of your navbar */
+      z-index: 1; /* You can use a z-index value that works well with the rest of your layout */
+      width: 100%; /* To make sure it spans the entire width */
+      opacity: 1;
+      transition: opacity 0.5s; /* Adjust the duration as desired */
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  .slide-left {
+    animation: slideFromLeft 1s ease-in-out;
+  }
+  .slide-right {
+    animation: slideFromRight 1s ease-in-out;
+  }
+  
+  /* Define CSS keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+/* Initial state: invisible */
+.navbar-brand {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Add transition for smooth fade-in */
+}
+
+/* Add animation class */
+.fade-in {
+  opacity: 1;
+}
